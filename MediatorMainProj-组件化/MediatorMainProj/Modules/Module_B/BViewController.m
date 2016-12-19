@@ -39,7 +39,7 @@
 
 - (void)buttonClick
 {
-    NSLog(@"没我啥事 ～ ");
+    NSLog(@"收到信息 - %@", self.params[@"message"]);
 }
 
 

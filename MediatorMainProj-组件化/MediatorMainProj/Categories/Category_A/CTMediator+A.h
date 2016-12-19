@@ -7,7 +7,10 @@
 //
 
 #import <CTMediator/CTMediator.h>
+#import <UIKit/UIKit.h>
 
 @interface CTMediator (A)
+
+- (UIViewController *)A_viewController;
 
 @end

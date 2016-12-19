@@ -10,4 +10,13 @@
 
 @implementation CTMediator (B)
 
+- (UIViewController *)B_viewControllerDetailWithMessage:(NSString *)message
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if (message) {
+        params[@"message"] = message;
+    }
+    return [self performTarget:@"B" action:@"pushed" params:params shouldCacheTarget:NO];
+}
+
 @end

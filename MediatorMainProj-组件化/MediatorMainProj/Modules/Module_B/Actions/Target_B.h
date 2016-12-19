@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Target_B : NSObject
+
+- (UIViewController *)Action_pushed:(NSDictionary *)params;
 
 @end

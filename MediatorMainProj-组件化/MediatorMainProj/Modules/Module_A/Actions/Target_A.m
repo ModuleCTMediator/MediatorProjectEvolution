@@ -7,7 +7,14 @@
 //
 
 #import "Target_A.h"
+#import "AViewController.h"
 
 @implementation Target_A
+
+- (UIViewController *)Action_pushed:(NSDictionary *)params
+{
+    AViewController *AController = [[AViewController alloc] init];
+    return AController;
+}
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <CTMediator/CTMediator.h>
+#import <UIKit/UIKit.h>
 
 @interface CTMediator (B)
+
+- (UIViewController *)B_viewControllerDetailWithMessage:(NSString *)message;
 
 @end

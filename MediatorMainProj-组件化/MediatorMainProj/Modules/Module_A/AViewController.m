@@ -7,7 +7,8 @@
 //
 
 #import "AViewController.h"
-#import "BViewController.h"
+//#import "BViewController.h"
+#import "CTMediator+B.h"
 
 @interface AViewController ()
 
@@ -40,7 +41,8 @@
 
 - (void)buttonClick
 {
-    BViewController *BController = [[BViewController alloc] init];
+//    BViewController *BController = [[BViewController alloc] init];
+    UIViewController *BController = [[CTMediator sharedInstance] B_viewControllerDetailWithMessage:@"Hello"];
     [self.navigationController pushViewController:BController animated:YES];
 }
 

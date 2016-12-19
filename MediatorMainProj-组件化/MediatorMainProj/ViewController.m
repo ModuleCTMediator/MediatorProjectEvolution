@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "AViewController.h"
+//#import "AViewController.h"
+#import "CTMediator+A.h"
 
 @interface ViewController ()
 
@@ -40,7 +41,8 @@
 
 - (void)buttonClick
 {
-    AViewController *AController = [[AViewController alloc] init];
+//    AViewController *AController = [[AViewController alloc] init];
+    UIViewController *AController = [[CTMediator sharedInstance] A_viewController];
     [self.navigationController pushViewController:AController animated:YES];
 }
 
