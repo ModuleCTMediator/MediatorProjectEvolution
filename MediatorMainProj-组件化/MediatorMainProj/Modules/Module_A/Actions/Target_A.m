@@ -11,7 +11,7 @@
 
 @implementation Target_A
 
-- (UIViewController *)Action_pushed:(NSDictionary *)params
+- (UIViewController *)Action_isPushed:(NSDictionary *)params
 {
     AViewController *AController = [[AViewController alloc] init];
     return AController;

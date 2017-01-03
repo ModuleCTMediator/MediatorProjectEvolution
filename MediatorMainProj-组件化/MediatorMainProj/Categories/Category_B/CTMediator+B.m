@@ -16,7 +16,7 @@
     if (message) {
         params[@"message"] = message;
     }
-    return [self performTarget:@"B" action:@"pushed" params:params shouldCacheTarget:NO];
+    return [self performTarget:@"B" action:@"isPushed" params:params shouldCacheTarget:NO];
 }
 
 @end

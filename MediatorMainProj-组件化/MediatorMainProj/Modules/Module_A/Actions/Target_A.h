@@ -11,6 +11,6 @@
 
 @interface Target_A : NSObject
 
-- (UIViewController *)Action_pushed:(NSDictionary *)params;
+- (UIViewController *)Action_isPushed:(NSDictionary *)params;
 
 @end
